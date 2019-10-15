@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="js/user.js"></script>
+        <meta charset="utf-8"/>
+        <title>Perfil</title>
+        <div class="barra">Perfil</div>
+    </head>
+
+    <body>
+
+        <div class="menu">
+
+            <a id="dados_pessoais" href="#">Dados Pessoais&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="mensagens" href="#">Mensagens&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="agenda" href="#">Agenda&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="biblioteca" href="#">Biblioteca&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="alunos" href="#">Alunos&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="funcionarios" href="#">Funcionários&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="estagiarios" href="#">Estagiários&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="consultas" href="#">Consultas&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="graficos" href="#">Gráficos&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="denuncias" href="#">Denúncias&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a id="arquivos_emergenciais" href="#">Arquivos Emergênciais</a>
+
+        </div>
+
+        <hr/>
+
+        <div class="corpo_tela_inicial p-4">
+
+            <h2>Ocorrência</h2>
+            <form class="row align-items-end">
+                <div class="col-3">
+                    <label>Selecionar o tipo de ocorrência</label>
+                    <select class="form-control" name="tipo">
+                        <option value="valor1">Violência Doméstica</option> 
+                        <option value="valor2" selected>Bullying</option>
+                        <option value="valor3">Assédio Sexual</option>
+                        <option value="valor4">Aliciamento</option>
+                    </select>
+                </div>
+
+                <div class="col-3">
+                    <label>Carga emocional</label>
+                    <input name="cargaEmocional"
+                        class="form-control"
+                        aria-describedby="cargaEmocional">
+                </div>
+                
+                <div class="col-2-5">
+                    <label>Data da Consulta</label>
+                    <input name="dataConsulta"
+                        type="date"
+                        class="form-control"
+                        aria-describedby="dataConsulta">
+                </div>
+
+                <button id="salvarOcorrencia" type="button" class="col-2-5 ml-4 btn btn-primary">
+                    SALVAR
+                </button>
+                
+            </form>
+
+            <h2 class="mt-5">Agendamento</h2>
+            <form class="row align-items-end">
+                <div class="col-6">
+                    <label>Descrição</label>
+                    <input name="descricao"
+                        class="form-control"
+                        aria-describedby="descricao">
+                </div>
+
+                <div class="col-2-5">
+                    <label>Data da Consulta</label>
+                    <input name="dataConsulta"
+                        type="date"
+                        class="form-control"
+                        aria-describedby="dataConsulta">
+                </div>
+
+                <button id="salvarAgendamento" type="button" class="col-2-5 ml-4 btn btn-primary">
+                    SALVAR
+                </button>
+                
+            </form>
+        </div>
+         
+    </body>
+</html>
